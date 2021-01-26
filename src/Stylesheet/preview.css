@@ -47,3 +47,8 @@
     font-size: 8px;
     margin-right: 3px;
 }
+
+.preview__sendIcon {
+    font-size: 10px !important;
+}
+
