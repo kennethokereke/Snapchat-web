@@ -11,7 +11,8 @@ import '../Stylesheet/PostChat.css'
 function PostChat({id, username, timestamp, read, imageUrl, profilePic}) {
     const dispatch = useDispatch()
     const history = useHistory();
-    const open = () => {
+    const open = (e) => {
+        e.preventDefault()
         if(!read) {
             dispatch(selectImage(imageUrl))
             db.collection("posts").doc(id).set(
@@ -29,7 +30,9 @@ function PostChat({id, username, timestamp, read, imageUrl, profilePic}) {
        <Avatar className="chat__avatar" src={profilePic}/>
        <div className="chat__info">
            <h4>{username}</h4>
-           <p style={{fontSize: 9}}>Tap to view - {" "} <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()}/></p>
+           <p style={{fontSize: 9}}>
+               {!read && "Tap to view -"}{" "} 
+           <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()}/></p>
 
 
        </div>
