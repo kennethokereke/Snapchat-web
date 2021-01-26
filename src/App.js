@@ -18,6 +18,11 @@ function App() {
 
           </Route>
 
+          <Route exact path="/chat/view" >
+            <Chat/>
+
+          </Route>
+
           <Route exact path="/chat" >
             <Chat/>
 
