@@ -8,6 +8,10 @@
     
 }
 
+.chat:hover {
+opacity: 0.8;
+}
+
 .chat__avatar {
     height: 35px !important;
     width: 35px !important;
@@ -23,7 +27,7 @@
 }
 
 .chat__info > h4 {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
 }
 
