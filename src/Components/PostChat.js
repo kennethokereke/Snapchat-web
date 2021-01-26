@@ -14,7 +14,7 @@ function PostChat({id, username, timestamp, read, imageUrl, profilePic}) {
     const open = () => {
         if(!read) {
             dispatch(selectImage(imageUrl))
-            db.collection('posts').doc(id).set(
+            db.collection("posts").doc(id).set(
                 {
                 read: true,
             }, 

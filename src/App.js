@@ -3,6 +3,7 @@ import {Switch , Route, Link, BrowserRouter as Router} from 'react-router-dom'
 
 import './App.css';
 import Chat from './Components/Chat';
+import ChatView from './Components/ChatView';
 import Preview from './Components/preview';
 import WebcamCapture from './Components/webcamCapture';
 
@@ -19,7 +20,7 @@ function App() {
           </Route>
 
           <Route exact path="/chat/view" >
-            <Chat/>
+            <ChatView/>
 
           </Route>
 
