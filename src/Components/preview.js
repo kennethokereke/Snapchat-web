@@ -17,12 +17,14 @@ import { db, storage } from '../Config/firebase'
 import firebase from 'firebase'
 
 import '../Stylesheet/preview.css'
+import { selectUser } from '../features/appSlice'
 
 function Preview() {
     // pulling the data from the redux
     const cameraImage = useSelector(selectCameraImage);
     const history = useHistory();
     const dispatch = useDispatch();
+    const user = useSelector(selectUser)
 
     useEffect(() => {
         if(!cameraImage) {
@@ -64,7 +66,7 @@ function Preview() {
                     imageUrl: url,
                     username: 'kenny',
                     read: false,
-                    //profilepic
+                    profilepic: user.profilepic,
                     //this will give you the server time (how recent is the post)
                     timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 

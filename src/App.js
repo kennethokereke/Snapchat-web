@@ -24,7 +24,7 @@ function App() {
           id: authUser.uid
         }))
       } else {
-        dispatch(lougout())
+        dispatch(lougout)
       }
 
     })
