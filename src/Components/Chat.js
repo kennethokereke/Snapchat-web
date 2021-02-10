@@ -1,4 +1,4 @@
-import { Avatar } from '@material-ui/core'
+import { Avatar, Button } from '@material-ui/core'
 import  RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonUnchecked'
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble'
 import SearchIcon from '@material-ui/icons/Search'
@@ -49,6 +49,9 @@ const logouts = () => {
   
 }
     return (
+        
+
+       
         <div className="chats">
             <div className="chats__header">
                 <div>
@@ -89,6 +92,8 @@ const logouts = () => {
            
             
         </div>
+        
+        
 
 
     )
