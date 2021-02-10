@@ -1,0 +1,26 @@
+[debug] [2021-02-10T16:19:51.872Z] ----------------------------------------------------------------------
+[debug] [2021-02-10T16:19:51.876Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-02-10T16:19:51.876Z] CLI Version:   9.1.0
+[debug] [2021-02-10T16:19:51.877Z] Platform:      darwin
+[debug] [2021-02-10T16:19:51.877Z] Node Version:  v15.6.0
+[debug] [2021-02-10T16:19:51.900Z] Time:          Wed Feb 10 2021 11:19:51 GMT-0500 (Eastern Standard Time)
+[debug] [2021-02-10T16:19:51.900Z] ----------------------------------------------------------------------
+[debug] [2021-02-10T16:19:51.900Z] 
+[debug] [2021-02-10T16:19:51.916Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-10T16:19:51.917Z] > authorizing via signed-in user
+[debug] [2021-02-10T16:19:51.917Z] [iam] checking project snapchat-cf030 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-10T16:19:51.921Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/snapchat-cf030:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-10T16:19:52.391Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 10 Feb 2021 16:19:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=134","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-10T16:19:52.392Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/snapchat-cf030  
+ 
+[debug] [2021-02-10T16:19:52.590Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 10 Feb 2021 16:19:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'snapchat-cf030'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-02-10T16:19:52.596Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/snapchat-cf030/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-10T16:19:53.504Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 10 Feb 2021 16:19:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[snapchat-cf030]: beginning deploy... 
+[info] i  hosting[snapchat-cf030]: found 16 files in build 
