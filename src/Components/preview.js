@@ -53,7 +53,7 @@ function Preview() {
          null, 
          (error) =>{
              //ERROR function
-            console.log(error)
+           error.message();
         },
         () => {
             //COMPLETE function
@@ -62,11 +62,11 @@ function Preview() {
             .child(id)
             .getDownloadURL()
             .then((url) => {
-                db.collection("posts").add({
+                db.collection('posts').add({
                     imageUrl: url,
-                    username: 'kenny',
+                    username: user.username,
                     read: false,
-                    profilepic: user.profilepic,
+                    profilePic: user.profilePic,
                     //this will give you the server time (how recent is the post)
                     timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 

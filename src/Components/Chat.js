@@ -40,6 +40,8 @@ function Chat() {
 const logouts = () => {
     auth.signOut().then(()=> {
         console.log('logged out')
+        history.push('/')
+
         
       }).catch((error) => {
         console.log(error.message)
@@ -49,11 +51,12 @@ const logouts = () => {
     return (
         <div className="chats">
             <div className="chats__header">
-
-                <Avatar 
+                <div>
+                     <Avatar 
                 src={user.profilePic} 
                 onClick={logouts} 
                 className="chats__avatar"/>
+                </div>
 
                 
                 <div className="chats__search">

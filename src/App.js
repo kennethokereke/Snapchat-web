@@ -40,7 +40,12 @@ function App() {
            <Login/>
 
          ): (
+           <>
+           <img className="app__logo" src="https://lakeridgenewsonline.com/wp-content/uploads/2020/04/snapchat.jpg" alt="snapchat" />
           <div className="App__body">
+            <div className="app__background">
+
+          
           <Switch>
          
             <Route exact path="/preview">
@@ -65,17 +70,24 @@ function App() {
            
           </Switch>
           </div>
+          </div>
+          </>
+          
 
          )}
          
+         
  
       </Router>
+    
       </div>
+      
       
 
      
     
   );
+
 }
 
 export default App;
